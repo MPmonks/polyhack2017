@@ -1,4 +1,5 @@
 import sys
+import datetime
 from eventClass import Event
 
 <<<<<<< HEAD
@@ -35,6 +36,15 @@ def newEventInfo():
 
 # finds out what type of imput the user is taking
 def takeUserChoices():
+    class Task:
+        def __init__(self, name):
+            self.name = name
+        def __init__(self, timeAllotted):
+            self.timeAllotted = timeAllotted
+        def __init__(self, deadlines):
+            self.deadlines = deadline
+
+    
 
 # takes in the information if they choose to use google calendar as a source
 def importFromGoogle():
