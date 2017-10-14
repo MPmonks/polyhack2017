@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:parse_ics.py.xcodeproj">
+      location = "self:/Users/samsamdirie/Desktop/Polyhack2017/polyhack2017/parse_ics.py/HomeProject.xcodeproj">
    </FileRef>
 </Workspace>
