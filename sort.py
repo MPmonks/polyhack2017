@@ -1,17 +1,20 @@
 import sys
 from eventClass import Event
 
-raw_input(num_events)
+def main():
 
-names[num_events]
-estTimes[num_events]
-deadlines[num_events]
+	raw_input(num_events)
 
-for i in num_events:
-    names
+	num_events = 0
+	names[num_events]
+	estTimes[num_events]
+	deadlines[num_events]
 
-userEvents[
+	for i in num_events:
+		names
+
+	#userEvents[
 
 
 if __name__ == '__main__':
-  main()
+	main()
