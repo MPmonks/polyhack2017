@@ -1,3 +1,3 @@
 function loadUserData() {
-    document.getElementById("test").innerHTML = "testing...";
+    var info = document.getElementById("userInfo").submit();
 }

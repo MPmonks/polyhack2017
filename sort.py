@@ -43,7 +43,6 @@ def takeUserChoices():
             self.timeAllotted = timeAllotted
         def __init__(self, deadlines):
             self.deadlines = deadline
-
     
 
 # takes in the information if they choose to use google calendar as a source

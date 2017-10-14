@@ -16,11 +16,11 @@
 		<script src='lib/jquery.min.js'></script>
 		<script src='lib/moment.min.js'></script>
 		<script src='fullcalendar/fullcalendar.js'></script>
-		<script src='user_input.js'></script>
+		<script type="text/javascript" src='user_input.js'></script>
 	</head>
 
 	<body>
-		<h1>Early Bird Calendar</h1>
+		<h1>EarlyBird Calendar</h1>
 		<h1 id="test" onload="loadUserInfo()"></h1>
 		<hr>
 		</br>
@@ -29,29 +29,24 @@
 		<hr>
 
 		<h2>Name of Event:</h2>
-		<form>
+		<form id="userInfo">
 			<p class="center"><input type="text" name="event"> </p><br>
-		</form>
+		
 
 		<h2>Approximate Duration:</h2>
-		<form>
+		
 			<p class="center"><input type="text" name="duration"></p><br>
-		</form>
+	
 
 		<h2>Complete By:</h2>
-		<form>
+		
 			<p class="center"><input type="text" name="complete"></p><br>
 		</form>
 
-		<p class="center"><button onclick="sendInfo()"><!--<a href="changes.html">-->Submit<!--</a>--></button></p>
+		<p class="center"><button onclick="sendInfo()"><a href="changes.html">Submit</a></button></p>
 		<!-- clicking button takes you to changes.html -->
-		<script>
-			function sendInfo() {
-				document.getElementById("test").innerHTML = "testing...";
-			}
-		</script>
 
 		<hr>
-		<h4>Early Bird Calendar was created at Polyhack 2017!</h4>
+		<h4>EarlyBird Calendar was created at Polyhack 2017!</h4>
 	</body>
 </html>

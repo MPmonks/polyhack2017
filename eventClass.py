@@ -1,6 +1,6 @@
 import sys
 
-class Event:
+class calRange:
     def __init__(self, name):
         self.name = name
     def __init__(self, startTime): 
