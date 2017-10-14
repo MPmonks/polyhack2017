@@ -1,4 +1,5 @@
 import sys
+from eventClass import Event
 
 raw_input(num_events)
 
