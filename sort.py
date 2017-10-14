@@ -4,16 +4,13 @@ import operator
 from eventClass import Event
 
 def main():
-    """
-        choice = ""
-        choice = takeUserChoices()
-        
-        if choice == "google"
-        importFromGoogle()
-        else if choice == "ICS"
-        importFromICS()
-        """
-    sortEvents(newEventInfo())
+    choice = ""
+    choice = takeUserChoices()
+    
+    if choice == "google"
+    importFromGoogle()
+    else if choice == "ICS"
+    importFromICS()
 
 # finds out what type of imput the user is taking
 def takeUserChoices():
@@ -48,10 +45,10 @@ def newEventInfo():
     deadlines = [] # list of event deadlines
 
 # store event info from user input
-for i in range(0, num_events):
-    names.append(raw_input("enter event name: "))
-    estTimes.append(input("enter estimated time to completion: "))
-    deadlines.append(input("enter deadline: "))
+    for i in range(0, num_events):
+        names.append(raw_input("enter event name: "))
+        estTimes.append(input("enter estimated time to completion: "))
+        deadlines.append(input("enter deadline: "))
     
     # store new events data in tuple
     userEvents = []
