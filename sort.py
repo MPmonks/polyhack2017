@@ -38,16 +38,10 @@ def importFromICS():
 # returns: list of tuples
 def newEventInfo():
     # open & parse json, store in temporary list
-    jsonData = open("data.json", "r")
+    jsonData = open("event_data.json", "r")
     if jsonData.tell() is not 0:
         tempList = json.loads(jsonData)
         print tempList
-    
-    # store number of new events to add to calendar from user input
-    num_events = input()
-    
-    if num_events < 0: # reset at 0 if poor input
-        num_events = 0
 
     names = [] # list of event names
     estTimes = [] # list of estimated times needed for event completion
