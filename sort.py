@@ -1,16 +1,16 @@
 import sys
 import datetime
 import operator
-from eventClass import Event
+from eventClass import calRange
 
 def main():
     choice = ""
     choice = takeUserChoices()
     
-    if choice == "google"
-    importFromGoogle()
-    else if choice == "ICS"
-    importFromICS()
+    if choice is "google":
+        importFromGoogle()
+    elif choice is "ICS":
+        importFromICS()
 
 # finds out what type of imput the user is taking
 def takeUserChoices():
