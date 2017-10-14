@@ -11,14 +11,7 @@ def main():
 		importFromGoogle()
 	else if choice == "ICS"
 		importFromICS()
-		
-	num_events = 0
-	raw_input(num_events)
 
-
-	names[num_events]
-	estTimes[num_events]
-	deadlines[num_events]
 =======
 def newEventInfo():
     num_events = input() # number of new events to add to calendar
@@ -38,9 +31,6 @@ def newEventInfo():
     userEvents = [] # store new events data in list
     for i in range(0, num_events):
         userEvents.append({"name": names[i], "estTime": estTimes[i], "deadline": deadlines[i]})
-
-def main():
-    return
 
 
 # finds out what type of imput the user is taking
