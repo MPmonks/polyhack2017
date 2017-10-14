@@ -1,5 +1,6 @@
 import sys
 import datetime
+import json
 import operator
 from eventClass import calRange
 
@@ -11,6 +12,8 @@ def main():
         importFromGoogle()
     elif choice is "ICS":
         importFromICS()
+    
+    print sortEvents(newEventInfo())
 
 # finds out what type of imput the user is taking
 def takeUserChoices():
@@ -30,10 +33,16 @@ def importFromGoogle():
 def importFromICS():
     return
 
-# stores user's new event input in list of tuples
+# convert json to list of tuples that store user's new event input
 # params: none
 # returns: list of tuples
 def newEventInfo():
+    # open & parse json, store in temporary list
+    jsonData = open("data.json", "r")
+    if jsonData.tell() is not 0:
+        tempList = json.loads(jsonData)
+        print tempList
+    
     # store number of new events to add to calendar from user input
     num_events = input()
     
@@ -44,7 +53,7 @@ def newEventInfo():
     estTimes = [] # list of estimated times needed for event completion
     deadlines = [] # list of event deadlines
 
-# store event info from user input
+    # store event info from user input
     for i in range(0, num_events):
         names.append(raw_input("enter event name: "))
         estTimes.append(input("enter estimated time to completion: "))
@@ -67,3 +76,4 @@ def sortEvents(userEvents):
 # call main
 if __name__ == '__main__':
     main()
+
